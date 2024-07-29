@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #0a0a0a, #1c1c1c);
+    background: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6') no-repeat center center fixed; /* Add your background image URL here */
+    background-size: cover;
     color: #007BFF;
     scroll-behavior: smooth;
 }
@@ -12,6 +13,9 @@ body {
     width: 80%;
     margin: 0 auto;
     animation: fadeIn 2s ease-in;
+    background: rgba(0, 0, 0, 0.8); /* Add a background color with opacity to make text readable */
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 @keyframes fadeIn {
@@ -251,10 +255,11 @@ body {
 }
 
 .experience {
-    background: #121212;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     text-align: center;
     padding: 4rem 0;
+    border-radius: 10px;
 }
 
 .experience h2 {
