@@ -265,11 +265,12 @@ body {
 
 .experience-slider {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 2rem;
     padding: 1rem;
+    scroll-behavior: smooth;
 }
 
 .experience-card {
