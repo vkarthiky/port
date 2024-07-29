@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6') no-repeat center center fixed; /* Add your background image URL here */
+    background: url('images/ba.jpeg') no-repeat center center fixed;
     background-size: cover;
     color: #007BFF;
     scroll-behavior: smooth;
@@ -13,9 +13,6 @@ body {
     width: 80%;
     margin: 0 auto;
     animation: fadeIn 2s ease-in;
-    background: rgba(0, 0, 0, 0.8); /* Add a background color with opacity to make text readable */
-    padding: 1rem;
-    border-radius: 10px;
 }
 
 @keyframes fadeIn {
@@ -28,34 +25,29 @@ body {
 }
 
 .navbar {
-    background: rgba(31, 31, 31, 0.8);
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 2rem;
+    top: 1rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    border-radius: 25px;
-    width: fit-content;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: top 0.3s;
+    font-size: 1.2rem;
 }
 
 .navbar .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .navbar .nav-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(12, 11, 11);
     transition: color 0.3s;
     padding: 0.5rem 1.5rem;
-    border-radius: 15px;
     font-weight: bold;
 }
 
@@ -88,6 +80,10 @@ body {
     text-align: left;
     margin-right: 2rem;
     margin-left: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    color: rgb(12, 10, 10);
     animation: slideInFromLeft 1.5s ease-out;
 }
 
@@ -206,13 +202,14 @@ body {
 .iphone-home .highlight {
     font-size: 1.5rem;
     font-weight: bold;
-    color: green;
+    color: rgb(232, 122, 43);
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    border: 4px solid rgb(25, 26, 25);
     margin: 10px 0;
     object-fit: cover;
 }
@@ -230,7 +227,7 @@ body {
 }
 
 .continue-btn:hover {
-    background-color: green;
+    background-color: rgb(16, 17, 16);
 }
 
 .menu {
@@ -259,7 +256,6 @@ body {
     color: #fff;
     text-align: center;
     padding: 4rem 0;
-    border-radius: 10px;
 }
 
 .experience h2 {
@@ -270,16 +266,15 @@ body {
 
 .experience-slider {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 2rem;
     padding: 1rem;
-    scroll-behavior: smooth;
 }
 
 .experience-card {
-    background: #1e1e1e;
+    background: rgba(30, 30, 30, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 2rem;
@@ -357,7 +352,7 @@ body {
 
 .card {
     border-radius: 12px;
-    background: #1e1e1e;
+    background: rgba(30, 30, 30, 0.9);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
