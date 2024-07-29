@@ -263,11 +263,11 @@ body {
     animation: fadeIn 2s ease-in;
 }
 
-.experience-container {
+.experience-slider {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .experience-card {
@@ -277,22 +277,15 @@ body {
     padding: 2rem;
     margin: 1rem;
     display: flex;
-    flex-direction: row;
+    flex: 0 0 100%;
+    max-width: 100%;
     align-items: center;
-    animation: slideIn 1.5s ease-out;
-    width: 80%;
-    max-width: 1200px;
+    scroll-snap-align: start;
+    transition: transform 0.5s ease;
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.experience-card:hover {
+    transform: scale(1.05);
 }
 
 .experience-img {
@@ -325,22 +318,6 @@ body {
 
 .experience-content ul li {
     margin-bottom: 0.5rem;
-}
-
-.next-btn {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-left: 2rem;
-    transition: background-color 0.3s;
-}
-
-.next-btn:hover {
-    background-color: green;
 }
 
 .projects {
