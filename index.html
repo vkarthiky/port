@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Viyyapu Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="intro">I am,</p>
+                <div class="about-intro">
+                    <h1>Karthik Viyyapu</h1>
+                    <p class="role">App Developer | Research Aide | Tech Enthusiast</p>
+                    <p>I am a Computer Science student at Arizona State University with a passion for app development and research in AI and mental health. With a solid foundation in various programming languages and frameworks, I strive to create impactful and innovative solutions.</p>
+                    <p>In my free time, I enjoy exploring new technologies, working on personal projects, and contributing to open-source communities. My goal is to leverage technology to solve real-world problems and make a positive impact on society.</p>
+                </div>
+            </div>
+            <div class="iphone">
+                <div class="iphone-frame">
+                    <div class="iphone-notch"></div>
+                    <div class="iphone-screen">
+                        <div class="iphone-home" id="iphone-home">
+                            <h1>I AM <span class="highlight">KARTHIK</span></h1>
+                            <img src="profile.jpg" alt="Profile Image" class="profile-pic">
+                            <p>App Developer | AI Researcher</p>
+                            <button class="continue-btn" onclick="showMenu()">Continue</button>
+                        </div>
+                        <div class="menu" id="menu">
+                            <a href="#home">Home</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <div class="experience-slider" id="experience-slider">
+            <div class="experience-card">
+                <img src="app-developer.jpg" alt="App Developer" class="experience-img">
+                <div class="experience-content">
+                    <h3>App Developer</h3>
+                    <p><strong>Published in Playstore</strong> | June 2018 – Present</p>
+                    <ul>
+                        <li>Developed a user-friendly interface in Java to facilitate app selection and cloning, enhancing user experience and accessibility.</li>
+                        <li>Implemented Java algorithms to clone existing applications, including file copying and resource modification.</li>
+                        <li>Utilized Java APIs to access device resources and permissions, ensuring secure installation of cloned apps.</li>
+                        <li>Collaborated with a team of developers to design and implement new features based on user feedback.</li>
+                        <li>Optimized app performance, resulting in a 20% increase in efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="research.jpg" alt="Research" class="experience-img">
+                <div class="experience-content">
+                    <h3>FURI Research Aide</h3>
+                    <p><strong>Arizona State University</strong> | May 2024 – Present</p>
+                    <ul>
+                        <li>Conducting independent research on AI and mental health, exploring the impact of large language models.</li>
+                        <li>Analyzing data to assess user experiences and the potential of AI tools in mental health.</li>
+                        <li>Developing and testing a chatbot prototype based on research findings.</li>
+                        <li>Collaborating with interdisciplinary teams to integrate AI solutions into mental health applications.</li>
+                        <li>Publishing research findings in peer-reviewed journals and presenting at conferences.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more experience cards as needed -->
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div>
+                    <article class="card primary">
+                        <h3>TunedIn</h3>
+                        <p><strong>React, TRPC, Figma, Bun</strong> | Feb 2024</p>
+                        <ul>
+                            <li>Designed and developed a music rating and recommendation app.</li>
+                            <li>Integrated Spotify API for personalized music recommendations.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div>
+                    <article class="card">
+                        <h3>Geospatial AR Experience</h3>
+                        <p><strong>Unity, ARToolKit, Blender, Google Maps API</strong> | Oct 2023</p>
+                        <ul>
+                            <li>Led development of a geospatial AR application with interactive experiences.</li>
+                            <li>Utilized Google Maps API for dynamic AR content based on user location.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div>
+                    <article class="card">
+                        <h3>RecovR</h3>
+                        <p><strong>Swift, JS, HTML, CSS, Firebase</strong> | April 2024</p>
+                        <ul>
+                            <li>Designed and developed a post-surgery recovery solution with an iOS app and web portal.</li>
+                            <li>Utilized Firebase for data synchronization and secure access for healthcare providers.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kviyyapu@asu.edu">kviyyapu@asu.edu</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/karthik-viyyapu/">linkedin.com/in/karthik-viyyapu</a></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
